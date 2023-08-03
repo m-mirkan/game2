@@ -1,0 +1,490 @@
+
+
+.body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: radial-gradient(circle, hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+}
+.fakebody{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+    background-color:white;
+    display:flex;
+    flex-direction :column;
+    justify-content : center;
+    align-items : center;
+}
+.game{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   flex-direction:column;
+  
+}
+.gameInfos{
+  margin-top: 5%;
+ outline: 2px solid hsl(217, 16%, 45%);
+ width:50%;
+ height: 15%;
+ border-radius: 15px;
+  color:  white;
+  padding: 1rem;
+  font-size:16px;
+  line-height: 0.8;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  
+}
+
+.score-box{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+     padding-top:0.5rem;
+     padding-bottom:0.5rem;
+     padding-right:2.5rem;
+     padding-left:2.5rem;  
+     border-radius: 4px;
+     line-height: 1.1;
+}
+#score{
+    color :  hsl(229, 25%, 31%);
+    font-size:72px;
+    font-weight: bold;
+
+
+}
+#score-text{
+    color :hsl(229, 64%, 46%); 
+    font-weight: 100;
+    font-size:16px;
+}
+
+
+
+
+.rules{
+    display:none;
+    flex-direction:column;
+  position: absolute;
+  top:10%;
+    justify-content:center;
+    align-items:center;
+    padding-top:2.5rem;
+    padding-bottom:2.5rem;
+ 
+    background-color:white;
+    border-radius:10px;
+   width: 35%;
+}
+
+#rules-pic{
+    width: 80%;
+    padding-bottom:1.5rem;
+
+}
+#title-rules{
+    color:hsl(229, 25%, 31%);
+    font-weight:bold;
+    font-size:32px;
+}
+.rules-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:1.5rem;
+    width:85%;
+}
+
+#pic-close{
+    height:2rem;
+}
+
+#rules-button{
+    background-color: hsl(237, 49%, 15%);
+    font-size:16px;
+    color:white;
+    border: 1px solid white;
+    border-radius:10px;
+    padding:0.8rem;
+    padding-right:2rem;
+   padding-left:2rem;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    
+}
+
+
+
+.biger-circle{
+   
+    position:absolute;
+    width:70px;
+    height:70px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(39, 89%, 49%);
+}
+
+.choices{
+   position: absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    top: 30%;
+   bottom: 25%;
+
+   }
+
+ 
+   .circle{
+    width:6rem;
+    height:6rem;
+    border-radius:50%;
+    background-color:white;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+     
+}
+.circle-scissores{
+   
+    position:absolute;
+    width:8rem;
+    height:8rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(39, 89%, 49%);
+    top:0%;
+}
+.circle-rock{
+   
+    position:absolute;
+    width:8rem;
+    height:8rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(349, 71%, 52%);
+    bottom:0%;
+    right:-5%;
+}
+
+.circle-paper{
+   
+    position:absolute;
+    width:8rem;
+    height:8rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color:hsl(230, 89%, 62%)  ;
+    right:-15%;
+    top:25%;
+   
+}
+
+.circle-lizard{
+   
+    position:absolute;
+    width:8rem;
+    height:8rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(261, 73%, 60%);
+    bottom:0%;
+    left:-5%;
+}
+
+.circle-spock{
+   
+    position:absolute;
+    width:8rem;
+    height:8rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(189, 59%, 53%);
+    left:-15%;
+    top:25%;
+}
+
+.circle-chosen{
+   
+    width:12rem;
+    height:12rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    
+}
+
+.circle-ch{
+    width:10rem;
+    height:10rem;
+    border-radius:50%;
+    background-color:white;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+     
+}
+#scissores{
+    height:3rem;
+    width:auto;
+} 
+#rock{
+    height:3rem;
+    width:auto;  
+}
+#paper{
+    height:3rem;
+    width:auto;
+}
+#lizard{
+    height:3rem;
+    width:auto;
+}
+#spock{
+    height:3rem;
+    width:auto;
+}
+.choices{
+    position: absolute;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     top: 30%;
+    bottom: 25%;
+ 
+    }
+
+    .fight{
+        width:130%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+#res{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+#note{
+    font-size: 48px;
+    color: white;
+}
+#playAgain{
+    margin-top: 2rem;
+    font-size: 16px;
+    background-color: white; 
+    color: hsl(229, 25%, 31%);
+    padding-left : 2.5rem;
+    padding-right : 2.5rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+   border-radius: 10px;
+}
+@media (max-width: 450px) {
+    #note{
+        font-size: 24px;
+        
+    }
+    #res{
+       position:absolute;
+      top:85%;
+      right:25%;
+      left:25%;
+    }
+
+
+    .circle-chosen{
+   
+        width:10rem;
+        height:10rem;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+        border-radius:50%;
+        
+    }
+    
+    .circle-ch{
+        width:8rem;
+        height:8rem;
+        border-radius:50%;
+        background-color:white;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+         
+    }
+
+    .fight{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+
+    #rules-button {
+        background-color: hsl(237, 49%, 15%);
+        font-size: 11px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 0.8rem;
+       padding-right:1rem;
+       padding-left:1rem;
+
+        position: absolute;
+        bottom: 30px;
+        right: 35%;
+        left: 35%;
+    }
+   
+
+   .choices{
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    top: 25%;
+    bottom: 25%;
+
+   }
+
+   #pentagon{
+    width:70%;
+   }
+
+
+   .gameInfos{
+    margin-top: 5%;
+   outline: 2px solid hsl(217, 16%, 45%);
+   width:80%;
+   height: 10%;
+   border-radius: 10px;
+    color:  white;
+    padding: 0.8rem;
+    font-size:11px;
+    line-height: 0.8;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+  }
+  .name{
+      font-weight:bold;
+  
+  }
+  .score-box{
+      background-color: white;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+       padding-top:0.5rem;
+       padding-bottom:0.5rem;
+       padding-right:1.5rem;
+       padding-left:1.5rem;  
+       border-radius: 4px;
+       line-height: 1.1;
+  }
+  #score{
+      color :  hsl(229, 25%, 31%);
+      font-size:32px;
+      font-weight: bold;
+  
+  
+  }
+  #score-text{
+      color :hsl(229, 64%, 46%); 
+      font-weight: 100;
+      font-size:11px;
+  }
+  
+  .logo{
+    width:25%;
+  }
+
+  .circle{
+    width:4rem;
+    height:4rem;
+  }
+  .circle-scissores{
+
+    width:5rem;
+    height:5rem;
+    top:10%;
+}
+.circle-rock{
+    width:5rem;
+    height:5rem;
+    bottom:10%;
+    right:15%;
+}
+
+.circle-paper{
+   
+    position:absolute;
+    width:5rem;
+    height:5rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color:hsl(230, 89%, 62%)  ;
+    right:5%;
+    top:25%;
+   
+}
+
+.circle-lizard{
+   
+    position:absolute;
+    width:5rem;
+    height:5rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(261, 73%, 60%);
+    bottom:10%;
+    left:15%;
+}
+
+.circle-spock{
+   
+    position:absolute;
+    width:5rem;
+    height:5rem;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    border-radius:50%;
+    background-color: hsl(189, 59%, 53%);
+    left:5%;
+    top:25%;
+}
+}
+
+   

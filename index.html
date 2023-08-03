@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body" class="body">
+
+<section id="game"  class="game">
+  <div id="gameInfos" class="gameInfos">
+    <img class="logo" src="images/logo-bonus.svg">
+     <div id="score-box" class="score-box">   
+         <div id="score-text"> S C O R E</div>
+         <div id="score">0</div>
+     </div>
+  </div>
+
+  
+    <div id="choices"  class="choices">
+      <div onclick="start(1)" class=" circle-scissores">  <div class=" circle " > <img id="scissores" src="images/icon-scissors.svg"></div> </div> 
+        <div onclick="start(3)"  class="circle-rock"> <div class=" circle " >  <img id="rock" src="images/icon-rock.svg"> </div></div>
+        <div onclick="start(2)"  class="circle-paper"> <div class=" circle ">  <img id="paper" src="images/icon-paper.svg"> </div></div>
+        <div onclick="start(4)"  class="circle-lizard"> <div class=" circle "> <img id="lizard" src="images/icon-lizard.svg"> </div> </div>
+        <div onclick="start(5)"  class="circle-spock"> <div class=" circle "><img id="spock" src="images/icon-spock.svg"> </div> </div>
+    
+       <img id="pentagon"   src="images/bg-pentagon.svg">
+     
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div id="rules" class="rules"> 
+     
+
+    <div class="rules-header">
+      <div id="title-rules"> RULES</div>
+      <img id="pic-close" onclick="closeRules()"  src="images/icon-close.svg">
+    </div>
+`
+     <img id="rules-pic"  src="images/image-rules-bonus.svg">
+    </div>
+
+  <button id="rules-button"  onclick="appearRules()">
+   R U L E S
+  </button>
+</section>
+  
+ <script src="index.js"></script>
+</body>
+</html>
