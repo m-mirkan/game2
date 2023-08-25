@@ -62,14 +62,15 @@ function closeRules() {
    </div>
 </div>
 
-<div class="choices">
-<div class=" circle-scissores">  <div class=" circle " > <img id="scissores" src="images/icon-scissors.svg"></div> </div> 
-  <div class="circle-rock"> <div class=" circle " >  <img id="rock" src="images/icon-rock.svg"> </div></div>
-  <div class="circle-paper"> <div class=" circle ">  <img id="paper" src="images/icon-paper.svg"> </div></div>
-  <div class="circle-lizard"> <div class=" circle "> <img id="lizard" src="images/icon-lizard.svg"> </div> </div>
-  <div class="circle-spock"> <div class=" circle "><img id="spock" src="images/icon-spock.svg"> </div> </div>
+<div id="choices"  class="choices">
+<div onclick="start(1)" class=" circle-scissores">  <div class=" circle " > <img id="scissores" src="images/icon-scissors.svg"></div> </div> 
+  <div onclick="start(3)"  class="circle-rock"> <div class=" circle " >  <img id="rock" src="images/icon-rock.svg"> </div></div>
+  <div onclick="start(2)"  class="circle-paper"> <div class=" circle ">  <img id="paper" src="images/icon-paper.svg"> </div></div>
+  <div onclick="start(4)"  class="circle-lizard"> <div class=" circle "> <img id="lizard" src="images/icon-lizard.svg"> </div> </div>
+  <div onclick="start(5)"  class="circle-spock"> <div class=" circle "><img id="spock" src="images/icon-spock.svg"> </div> </div>
 
  <img id="pentagon"   src="images/bg-pentagon.svg">
+
 </div>
 
 
