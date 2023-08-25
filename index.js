@@ -1,7 +1,10 @@
 
 
 function appearRules(){
-    console.log("h");
+  const element = document.getElementById("score");
+
+  const score= element.textContent;
+      console.log( score);
     rules = document.getElementById("rules");
     body = document.getElementById("body");
     
@@ -13,7 +16,7 @@ function appearRules(){
         body.innerHTML = `
         <div id="title-rules"  style=" position:absolute ;bottom:85%"> RULES</div>
 
-      
+         <div id ="score" style ="visibility:hidden">${score} </div>
          
         <img id="rules-pic" style=" position:absolute ;bottom:25%"  src="images/image-rules-bonus.svg">
 
@@ -36,12 +39,17 @@ function appearRules(){
   
 }
 
+
 function closeRules() {
+
     var rules = document.getElementById("rules");
     var body = document.getElementById("body");
     const screenWidth = window.innerWidth;
     if(screenWidth > 450){ body.style.background = "radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%))";
     rules.style.display = "none";}else{
+      const element = document.getElementById("score");
+
+    var score =  element.textContent;
         body.innerHTML = `
       
 <section id="game"  class="game">
@@ -49,7 +57,8 @@ function closeRules() {
   <div class="name"> ROCK <br> PAPER<br> SCISSORS <br>LIZARD <br>SPOCK </div>
    <div id="score-box" class="score-box">   
        <div id="score-text"> S C O R E</div>
-       <div id="score">12</div>
+       <div id="score"> ${score}</div>
+
    </div>
 </div>
 
@@ -317,7 +326,7 @@ async function flip(lo) {
   score.innerHTML = (parseInt(score.innerHTML) +1).toString();
   res.innerHTML=`
  
-
+  
  
   <div id="note"> YOU WIN </div>
 
